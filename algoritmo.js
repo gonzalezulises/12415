@@ -1,4 +1,4 @@
-var diausuario=prompt("ingrese un dia de la semana");
+var diausuario=prompt("ingrese un dia de la semana lunes","martes","miercoles","jueves","viernes","sabado","domingo");
 var diassemana= ["lunes","martes","miercoles","jueves","viernes","sabado","domingo"]
 
 
