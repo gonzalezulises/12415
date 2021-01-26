@@ -1,5 +1,6 @@
 var diausuario=prompt("ingrese un dia de la semana");
 var diassemana= ["lunes","martes","miercoles","jueves","viernes","sabado","domingo"]
+
 if (diausuario == "lunes"){
     a=1;
 }
@@ -24,7 +25,7 @@ else if (diausuario == "domingo"){
 
 
 for (var i=0 ;i<7;i++) {
-  if (diassemana[i] = a ){
+  if (i = a ){
  diapar ()
   break;
  } 
