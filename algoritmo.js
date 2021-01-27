@@ -1,8 +1,8 @@
 var diausuario=prompt("ingrese un dia de la semana");
-var posicionnumero = [1,2,3,4,5,6,7]
-var posiciondia = ["lunes","martes","miercoles","jueves","viernes","sabado","domingo"]
+var posicionnumero = [1,2,3,4,5,6,7];
 
-//Primera forma, para nada elegante
+
+//Primer intento, para nada elegante sin el "for"
 if (diausuario == "lunes"){
     a=1;
    
@@ -33,10 +33,10 @@ else if (diausuario == "domingo"){
 }
 
 if (a % 2 == 0){
-        alert('El numero introducido es par');
+        alert('El dia introducido es un numero par en la semana');
     }
 else {
-        alert('El numero introducido es impar');
+        alert('El dia introducido es un numero impar en la semana');
     }
 
 
@@ -44,17 +44,20 @@ else {
 //otra forma un poco mas elegante
 
 if ( diausuario == 'martes'|| diausuario == 'jueves'|| diausuario == 'sabado') {
-    document.write ("ese es un dia par")
-}
-else {
-    document.write ("ese es un dia impar")
-}
-
-//otra forma un poco mas elegante
-
-if (['martes', 'jueves', 'sabado'] .indexOf(posiciondia) >= 0) {
     document.write ("ese es un dia par");
 }
 else {
-    document.write ("ese no es un dia impar")
+    document.write ("ese es un dia impar");
+}
+
+//otra forma como lo pide coderhouse
+
+var posiciondia = ["lunes","martes","miercoles","jueves","viernes","sabado","domingo"];
+for (var i=0; i<7 ; i++) {
+    if (i<6){
+    alert (posiciondia[i]);
+    }
+    else {
+    alert ("Llegamos al domingo");    
+    }
 }
