@@ -10,6 +10,7 @@ function inventario (marca,tipo) {
 var getDatos = new inventario ( getDatosPCmarca,getDatosPCtipo)
 
 console.log (getDatos)
+alert(getDatos)
 
 
 
